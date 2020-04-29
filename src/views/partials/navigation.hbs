@@ -1,0 +1,47 @@
+<nav class="navbar navbar-light navbar-expand-lg bg-white shadow-sm">
+	<div class="container">
+		<a class="navbar-brand" href="/">CRUD Educativo
+		</a>
+	<button aria-label="Mostrar u ocultar menú" class="navbar-toggler" id="botonMenu" type="button">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+	  <ul class="nav nav-pills">
+	  	<li class="nav-item">
+	  		<a class="nav-link " href="/">inicio
+	  		</a>
+	  	</li>
+	  	<li class="nav-item ">
+	  		<a class="nav-link " href="/docente/add">Docentes
+	  		</a>
+	  	</li>
+	  	<li class="nav-item">
+	  		<a  class="nav-link" href="/estudiante/add">Estudiantes
+	  		</a>
+	  	</li>
+		<li class="nav-item ">
+			<a class="nav-link" href="/materias/add">Materias
+			</a>
+		</li>
+		<li class="nav-item ">
+			<a class="nav-link" href="/notas/add">Notas
+			</a>
+		</li>
+		<li class="nav-item ">
+			<a class="nav-link" href="/periodo/add">Periodo
+			</a>
+		</li>
+	
+	  </ul>
+	</div>
+	</div>
+	<script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            const menu = document.querySelector("#menu"),
+                botonMenu = document.querySelector("#botonMenu");
+            if (menu) {
+                botonMenu.addEventListener("click", () => menu.classList.toggle("show"));
+            }
+        });
+    </script>
+</nav>

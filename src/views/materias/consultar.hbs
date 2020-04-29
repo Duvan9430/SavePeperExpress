@@ -1,0 +1,27 @@
+<h1 class="display-4 text-center">Materias</h1>
+<hr>
+<div class="container py-4">
+
+		<table id="gtabla" class="table table-striped table-bordered  ">
+			<thead >
+				<tr class="bg-danger text-white ">
+					<th scope="col">id</th>
+					<th scope="col">Nombre Materia</th>
+					<th scope="col">Opciones</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				{{#each materias}}
+				<tr>
+					<th scope="col">{{id_materia}}</th>
+					<td>{{materia}}</td>
+					<td>
+						<a href="delete/{{id_materia}}" class="btn btn-danger">Eliminar</a>
+						<a href="modificar/{{id_materia}}" class="btn btn-info">Editar</a>
+					</td>	
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+</div>

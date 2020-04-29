@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        {{#each produTodos}}
+         <div class="col-md-3">
+             <div class="card text-center">
+                 <a href="">
+                 <div class="card header">
+                    <img src="/{{url_img}}" width="100%" alt=""> 
+                 </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <font style="font-size: 30px">  
+                            {{valor_producto}}
+                            </font>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <font style="font-size: 15px">
+                                {{nombre_producto}}
+                            </font>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+             </div>
+         </div>
+         
+        {{/each}}
+        
+    </div>
+</div>

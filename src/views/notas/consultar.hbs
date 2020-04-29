@@ -1,0 +1,34 @@
+<h1 class="display-4 text-center">Notas</h1>
+<hr>
+<div class="container py-4">
+
+		<table id="gtabla" class="table table-striped table-bordered  ">
+			<thead >
+				<tr class="bg-danger text-white ">
+					<th scope="col">id</th>
+					<th scope="col">Docentes</th>
+					<th scope="col">Estudiantes</th>
+					<th scope="col">Materia</th>
+					<th scope="col">Periodo</th>
+					<th scope="col">nota</th>
+					<th scope="col">Opciones</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each notas}}
+				<tr>
+					<th scope="col">{{id_notas}}</th>
+					<td>{{id_docente}}</td>
+					<td>{{id_estudiante}}</td>
+					<td>{{id_materia}}</td>
+					<td>{{id_periodo}}</td>
+					<td>{{nota}}</td>
+					<td>
+						<a href="delete/{{id_notas}}" class="btn btn-danger">Eliminar</a>
+						<a href="modificar/{{id_notas}}" class="btn btn-info">Editar</a>
+					</td>	
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+</div>

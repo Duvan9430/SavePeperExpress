@@ -1,0 +1,52 @@
+<div class="container py-4">
+	<div class="row">
+		<div class="col-12 col-sm-10 col-lg-9 mx-auto">
+			<div class="card">
+				 <div class="card-bady">
+				 	<form action="/usuarios/editar/{{consulta2.id_usuario}}" method="POST" class="bg-white py-5 px-4 shadow rounded">
+				 			<h1 class="display-4 text-center">Modificar Usuario</h1>
+							<hr>
+						<div class="form-group">
+				 			<label for="nombre">Nombre Usuario:</label>
+				 			<input class="form-control border-0 bg-light shadow-sm" 
+				 			 type="text"
+				 			 name="nombres"
+				 			 value="{{consulta2.nombres}}">
+				 		</div>
+				 		<div class="form-group">
+				 			<label for="nombre">Celular Usuario:</label>
+				 			<input class="form-control border-0 bg-light shadow-sm" 
+				 			 type="text"
+				 			 name="celular"
+				 			 value="{{consulta2.celular}}">
+				 		</div>
+				 		<div class="form-group">
+				 			<label for="nombre">Correo Usuario:</label>
+				 			<input class="form-control border-0 bg-light shadow-sm" 
+				 			 type="text"
+				 			 name="correo"
+				 			 value="{{consulta2.correo}}">
+				 		</div>
+				 		<div class="form-group">
+				 			<label for="nombre">descripcion Usuario:</label>
+				 			<input class="form-control border-0 bg-light shadow-sm" 
+				 			 type="text"
+				 			 name="descripcion"
+				 			 value="{{consulta2.descripcion}}">
+				 		</div>
+				 		<div class="form-group">
+				 			<label for="nombre">Escribale un like:</label>
+				 			<input class="form-control border-0 bg-light shadow-sm" 
+				 			 type="text"
+				 			 name="like">
+				 		</div>
+				 		<div class="form-group">
+				 			<button type="submit" class="btn btn-block btn-lg btn-success">Enviar Like</button>
+				 			<a href="/usuarios/show" class="btn btn-block btn-lg btn-danger">Cancelar</a>
+				 		</div>				 		
+				 	</form>
+				 </div>
+			</div>
+		</div>
+	</div>
+</div>
